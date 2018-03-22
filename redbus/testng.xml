@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Red Bus Smoke Test Suite" parallel="false" verbose="1" configfailurepolicy="continue">
+	<listeners>
+        <listener class-name="com.redbus.BaseClasses.TestNGExecutionListener"></listener>
+    </listeners>
+  <test name="Test Set 1" annotations="JDK" preserve-order="true">
+	  <classes>
+		  <class name="com.redbus.RunnerClasses.SmokeTestRunner"></class> 
+	  </classes>	  
+  </test> 
+</suite>
